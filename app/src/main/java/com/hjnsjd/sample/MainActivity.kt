@@ -59,7 +59,9 @@ class MainActivity : AppCompatActivity() {
 //        }
 //
 //        val arr = listOf("Hello", "world", "hui")
-//        val arr2 = arrayListOf("Hello", "IENGROUND")
+//        val arr2 = arrayListOf("Hello", "IENGROUND","hjnsjd")
+
+//        arr2.add
 
 //        arr[0] = "hjnsjd"
 //        arr2[0] = "hjnsjd"
@@ -76,55 +78,82 @@ class MainActivity : AppCompatActivity() {
 //        for (i in arr2) {
 //            Log.d(TAG, i)
 //        }
-
-//        val name = arrayListOf("이현우", "김형진", "김소미", "이지은")
 //
-//        for (i in name) {
+//        arr2.add(1 ,"hi")
+//
+//        for (i in arr2) {
 //            Log.d(TAG, i)
 //        }
+//
+////        val name = arrayListOf("이현우", "김형진", "김소미", "이지은")
+////
+////        for (i in name) {
+////            Log.d(TAG, i)
+////        }
+//
+//
+////        val arr = arrayListOf<Int>()
+////        val arr2 = arrayListOf(2, 5, 10)
+////        var sum=0
+////
+////        var max=-1
+////        var min=101
+////        val arr = arrayListOf(100, 68, 80, 52, 60, 55, 96, 92, 89, 69)
+////        for (a in arr) {
+////            if(max<a) max=a
+////            if(min>a) min=a
+////            sum+=a
+////
+////        }
+////        Log.d(TAG,"max=$max, min=$min, avg=${sum / (arr.size.toFloat())}")
+////
+////        sum(4, 5)
+////
+//////        max.sum2()
+////        arr.sum2()
+//
+////        Log.d ( TAG,sum (1,2).toString())
+//        Log.d(TAG, mySum(1).toString())
+//
+//        Log.d(TAG, mySum(1, 2).toString())
+//
+//        Log.d(TAG, mySum(1, 5,3, 2, 6).toString())
+//
+//        val myArray = arrayListOf(100, 20, 3)
+//        Log.d(TAG, sum(1, 2).toString())
+//        Log.d(TAG, sum(1.0f, 2.0f).toString())
+//        Log.d(TAG, sum(1, 2, 3).toString())
 
+        val animal = Animal(true, 10)
+        animal.printAge()
+        animal.printGender()
+        animal.eat("피자")
+        animal.sleep(5)
 
-//        val arr = arrayListOf<Int>()
-//        val arr2 = arrayListOf(2, 5, 10)
-        var sum=0
+        val animal2 = Animal(false, 20)
+        animal2.eat("햄버거")
+        animal2.printAge()
 
-        var max=-1
-        var min=101
-        val arr = arrayListOf(100, 68, 80, 52, 60, 55, 96, 92, 89, 69)
-        for (a in arr) {
-            if(max<a) max=a
-            if(min>a) min=a
-            sum+=a
-
-        }
-        Log.d(TAG,"max=$max, min=$min, avg=${sum / (arr.size.toFloat())}")
-
-        sum(4, 5)
-
-//        max.sum2()
-        arr.sum2()
-
-
+        val human = Human("김형진", "1234", true, 17)
+        human.eat("밥")
+        human.sleep(7)
+        human.printAge()
+        human.printGender()
     }
 
-
-    fun sum(a: Int, b: Int) {
-
+    fun sum(a: Int, b: Int): Int {
+        Log.d(TAG, "int sum")
+        return a + b
     }
 
-    fun ArrayList<Int>.sum2(): Int {
-        return 5
+    fun sum(a: Int, b: Int, c: Int): Int {
+        Log.d(TAG, "int sum 3")
+        return a + b + c
     }
 
-    fun a(b: ArrayList<Int>) : Boolean{
-        var count = 0
-        for (i in b) {
-            if (i <= 10) {
-                count++
-            }
-        }
-
-        return (count > b.size - count)
+    fun sum(a: Float, b: Float): Float {
+        Log.d(TAG, "float sum")
+        return a + b
     }
 
 
