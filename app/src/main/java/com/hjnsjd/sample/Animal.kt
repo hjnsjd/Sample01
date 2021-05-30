@@ -7,7 +7,7 @@ open class Animal(var age: Int, var gender: Int, var name: String){
         Log.d(TAG, "${name}는 숨을 쉰다")
     }
 
-    fun move(length: Int) {
+    fun move(length: Int = 6) {
         Log.d(TAG, "${name}은 ${length}만큼 움직였다")
     }
 
