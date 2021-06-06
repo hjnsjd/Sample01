@@ -1,6 +1,7 @@
 package com.hjnsjd.sample
 
 import android.content.Context
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -25,9 +26,12 @@ class MainActivity : AppCompatActivity() {
 
 //        val textView: TextView = findViewById(R.id.textView)
 //        textView.text = "김형진"
+//        binding.textview.setTextColor(Color.BLUE)
+//        binding.textview.
 
-        var a="과로사"
-        binding.textView.text = a
+
+//        var a="과로사"
+//        binding.view1
 
 
     }
